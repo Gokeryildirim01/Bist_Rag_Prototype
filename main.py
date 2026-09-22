@@ -18,8 +18,6 @@ from langchain_groq import ChatGroq
 # =====================================================================
 # 1. ORTAM VE API KEY AYARI
 # =====================================================================
-# GitHub güvenliği için API Key doğrudan koda yazılmaz, ortam değişkeninden alınır.
-# Yerel ortamda çalıştırmak için ikinci parametreye kendi API Key'inizi verebilirsiniz.
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "YOUR_GROQ_API_KEY_HERE")
 
 # =====================================================================
@@ -72,7 +70,7 @@ retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 # =====================================================================
 llm = ChatGroq(
     groq_api_key=GROQ_API_KEY,
-    model_name="llama3-8b-8192",  # Yüksek limitli ve kesintisiz çalışan model
+    model_name="llama3-8b-8192",  
     temperature=0.4,
     max_tokens=1000
 )
