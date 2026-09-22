@@ -1,0 +1,2 @@
+# Bist_Rag_Prototype
+Bist rag prototype(ADEL)***YATIRIM TAVSİYESİ DEĞİLDİR MODELİN KENDİ KODLARINDA DA YAZMAKTADI***
